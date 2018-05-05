@@ -1,0 +1,10 @@
+git clone https://github.com/allanzelener/yad2k.git
+cd yad2k
+
+# [Option 1] To replicate the conda environment:
+conda env create -f environment.yml
+source activate yad2k
+# [Option 2] Install everything globaly.
+pip install numpy h5py pillow
+pip install tensorflow-gpu  # CPU-only: conda install -c conda-forge tensorflow
+pip install keras # Possibly older release: conda install keras
